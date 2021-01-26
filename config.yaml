@@ -1,0 +1,17 @@
+basic:
+  version: 0.1
+  name: daakghar service
+  port: 9090
+  host: 127.0.0.1
+
+mgo:
+  url: mongodb://127.0.0.1:27017/daakghar
+
+token:
+  key: hellodaakghar
+
+mail_service:
+  mail_address: someone@somewhere.com
+  mail_password: mail_password
+  smtp_host: smtp.gmail.com
+  smtp_port: 25
