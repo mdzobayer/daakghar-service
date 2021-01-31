@@ -120,7 +120,7 @@ func (c create) SendVerificationMail() {
 	from := viper.GetString("mail_service.mail_address")
 	pass := viper.GetString("mail_service.mail_password")
 	to := c.apiDt.Email
-	body := "Gaachwala Verification link: http://" + viper.GetString("basic.host") + ":" + viper.GetString("basic.port") + "/api/accountverify/" + c.id.ID
+	body := "Daakghar Verification link: http://" + viper.GetString("basic.host") + ":" + viper.GetString("basic.port") + "/api/accountverify/" + c.id.ID
 
 	msg := "From: " + from + "\n" +
 		"To: " + to + "\n" +
