@@ -30,7 +30,7 @@ func user(r *[]Route) {
 
 	*r = append(*r, Route{
 		Name:    "Get User login token",
-		Path:    "/api/user",
+		Path:    "/api/token",
 		Method:  "POST",
 		Handler: apiHandler(api.UsrToken),
 	})

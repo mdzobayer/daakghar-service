@@ -8,7 +8,7 @@ mgo:
   uri: mongodb://127.0.0.1:27017/daakghar
 
 token:
-  key: hellodaakghar
+  key: Hello World&*^^&KJNHJ&y7jnjbb(((
 
 mail_service:
   mail_address: someone@somewhere.com

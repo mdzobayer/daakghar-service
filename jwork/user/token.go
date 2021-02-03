@@ -99,7 +99,7 @@ func (t *token) genToken() {
 		Expire:   time.Now().UTC().Add(time.Hour * 24 * 30), // Expiry date for a token is set to a month
 	}
 
-	//fmt.Println("token user", usr, config.Get().Token().Key)
+	// fmt.Println("token user", usr, config.Get().Token().Key)
 	usrtk, err := tk.Encrypt(usr, config.Get().Token().Key)
 	if err != nil {
 		t.err = errors.Wrap(err, "jwork.user.token.genToken")
