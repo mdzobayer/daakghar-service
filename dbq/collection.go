@@ -2,6 +2,7 @@ package dbq
 
 // Names for all the collections
 const (
-	userC string = "user"
-	roleC string = "role"
+	userC         string = "user"
+	roleC         string = "role"
+	conversationC string = "conversation"
 )

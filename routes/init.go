@@ -11,6 +11,7 @@ func Get() *mux.Router {
 
 	rts := []Route{}
 	user(&rts)
+	conversation(&rts)
 
 	for _, v := range rts {
 		r.HandleFunc(v.Path, reqLog(v, v.Handler)).Name(v.Name).Methods(v.Method)
@@ -54,5 +55,15 @@ func user(r *[]Route) {
 		Path:    "/api/user/update/{id}",
 		Method:  "POST",
 		Handler: apiHandlerWithCustAuth(api.UsrUpdate),
+	})
+}
+
+// conversation creates conversation api routes
+func conversation(r *[]Route) {
+	*r = append(*r, Route{
+		Name:    "Create Conversation",
+		Path:    "/api/conversation",
+		Method:  "POST",
+		Handler: apiHandlerWithCustAuth(api.ConversationCreate),
 	})
 }
