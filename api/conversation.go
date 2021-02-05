@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/daakghar-service/data/api/conversation"
+	"github.com/daakghar-service/data/api/filters"
 	"github.com/daakghar-service/jwork"
 	jconversation "github.com/daakghar-service/jwork/conversation"
 	"github.com/pkg/errors"
@@ -21,5 +22,18 @@ func ConversationCreate(user string) JHandler {
 		}
 
 		return jconversation.NewCreate(user, conversation)
+	}
+}
+
+// ConversationGet handles get conversation
+func ConversationGet(user string) JHandler {
+
+	return func(w http.ResponseWriter, r *http.Request) jwork.Worker {
+		id := filters.ID{}
+		if err := id.Parse(r); err != nil {
+			return jwork.NewErr(errors.Wrap(err, "api.ConversationGet, parse id param"))
+		}
+
+		return jconversation.NewPrivateRead(id)
 	}
 }

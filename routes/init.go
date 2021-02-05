@@ -66,4 +66,11 @@ func conversation(r *[]Route) {
 		Method:  "POST",
 		Handler: apiHandlerWithCustAuth(api.ConversationCreate),
 	})
+
+	*r = append(*r, Route{
+		Name:    "Get Conversation by id",
+		Path:    "/api/conversation/{id}",
+		Method:  "GET",
+		Handler: apiHandlerWithCustAuth(api.ConversationGet),
+	})
 }
