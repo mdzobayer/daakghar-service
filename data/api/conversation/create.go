@@ -25,10 +25,10 @@ type Member struct {
 	JoinedBy    string    `json:"JoinedBy"`
 	JoiningTime time.Time `json:"JoiningTime"`
 
-	RemovedBy    string    `json:"RemovedBy"`
-	RemovingTime time.Time `json:"RemovingTime"`
+	RemovedBy    string    `json:"RemovedBy,omitempty"`
+	RemovingTime time.Time `json:"RemovingTime,omitempty"`
 
-	LeavingTime time.Time `json:"LeavingTime"`
+	LeavingTime time.Time `json:"LeavingTime,omitempty"`
 }
 
 // Valid valids conversation data
