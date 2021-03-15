@@ -1,0 +1,148 @@
+// Messages.json
+{
+    "_id": "21bde479-27dc-4e51-9862-fbf02606868f",
+    "ConversationId": "763e6856-fd96-49a2-971b-40b30ad576a2",
+    "MesaageText/body": "hello",
+    "MessageNumber": 5,
+    "MessageSenderId": "0fd4a403-ac88-4ad1-b7b8-3806aa759664",
+    "MessageSendTime": ISODate("2021-01-02T13:13:37.465Z"),
+    "MessageDeliveryTime": ISODate("2021-01-02T13:13:37.465Z"),
+    "Reactions" : [
+        {
+            "UserId" : "63f57fd5-ac75-4c1a-b2e4-207160eedf75",
+            "ReactionTime" : ISODate("2021-01-02T13:13:37.465Z"),
+            "EmojiCode" : ":)"
+        }
+    ],
+    "Action" : {
+        "Type" : "UserAdd / UserRemove / Conversation Name change",
+        "ActionBy" : "e18b1311-d3c9-4e66-b3c0-74f8a0f19db9",
+        "ActionTime" : ISODate("2021-01-02T13:13:37.465Z")
+    },
+    "SeenBy": [
+        "63f57fd5-ac75-4c1a-b2e4-207160eedf75",
+        "e18b1311-d3c9-4e66-b3c0-74f8a0f19db9"
+    ],
+    "DeliveredTo": [
+        "63f57fd5-ac75-4c1a-b2e4-207160eedf75",
+        "e18b1311-d3c9-4e66-b3c0-74f8a0f19db9"
+    ],
+    "DeletedFrom": [
+        "63f57fd5-ac75-4c1a-b2e4-207160eedf75",
+        "e18b1311-d3c9-4e66-b3c0-74f8a0f19db9"
+    ],
+    "CanDeleteTimeFromOtherBySender": ISODate("2021-01-02T13:13:37.465Z"),
+    "Edited/Updated": {
+        "Status": true,
+        "History": [
+            {
+                "PreviousMessage": "hi",
+                "UpdatedTime":  ISODate("2021-01-02T13:13:37.465Z")
+            }
+        ]
+    },
+    "Forwarded": {
+        "Status": true,
+        "ConversationId": "83b3da15-7c95-4456-962c-725a1f8715f6",
+        "SourceMessageId": "85fb1ac3-4ccc-4ea8-b9c5-51bdddc303bc",
+        "DateTime": ISODate("2021-01-02T13:13:37.465Z")
+    },
+    "Replied": {
+        "Status": true,
+        "ParentMessageId": "85fb1ac3-4ccc-4ea8-b9c5-51bdddc303bc",
+        "DateTime": ISODate("2021-01-02T13:13:37.465Z")
+    },
+    "MessageSenderLocation": {
+        "Latitude": 547,
+        "Longitude": 87
+    },
+    "RestrictedFor": [
+        "37f41dca-2034-45a6-8169-b0f67b751b1f",
+        "aef194ac-1dda-4a96-82fd-0ad54efe3322"
+    ],
+    "BusinessApplicationId": "0ff26841-3320-4052-b8ce-1b4ce9c0dcea",
+    "Attachments": [
+        {
+            "ItemId": "e254643d-d231-4d7e-9bd7-d7970e036e29",
+            "Type": "pdf",
+            "URL": "www.someone@somewher",
+            "ThumbnailAvailable": true
+        },
+        {
+            "ItemId": "r854643d-d231-4d7e-9bd7-d7970e036e29",
+            "Type": "mp3",
+            "URL": "www.someone@somewher",
+            "ThumbnailAvailable": false
+        }
+    ],
+    "Thumbnail": {
+        "Available": true,
+        "URL": ""
+    },
+    "IdsAllowedToRead": [],
+    "IdsAllowedToUpdate": [],
+    "IdsAllowedToInsert": [],
+    "IdsAllowedToDelete": [],
+    "RolesAllowedRead": [],
+    "RolesAllowedInsert": [],
+    "RolesAllowedUpdate": [],
+    "RolesAllowedToDelete": []
+}
+
+// Conversations.json
+{
+    "_id" : "9591bdd9-1ef3-4fb0-8fb0-ee57e050f51e",
+    "BusinessApplicationId" : "487319e3-fe24-4e08-bca7-7ec94811c464",
+    "BusinessApplicationName" : "ADDA.COM",
+    "ConversationId" : "9d78010c-fb68-4b66-af63-537153497de0",
+    "ConversationName" : "School Friend Zone",
+    "ConversationAdmin" : "",
+    "Users" : [
+        {
+            "UserId" : "",
+            "NickName": "",
+            "Role" : "",
+            "JoinTime" : ISODate("2021-01-02T13:13:37.465Z"),
+            "LeaveTime" : ISODate("2021-01-02T13:13:37.465Z"),
+            "RemoveTime" : ISODate("2021-01-02T13:13:37.465Z"),
+            "RemovedBy" : "9d78010c-fb68-4b66-af63-537153497de0"
+        }
+    ]
+}
+
+// BusinessApps.json
+{
+    "_id" : "9591bdd9-1ef3-4fb0-8fb0-ee57e050f51e",
+    "BusinessApplicationId" : "487319e3-fe24-4e08-bca7-7ec94811c464",
+    "BusinessApplicationName" : "ADDA.COM",
+    "SubscribedPackageId" : "e48e210e-76ce-48a5-9cfa-e770d1c26116",
+    "SubscriptionExpiresAT" : ISODate("2021-01-02T13:13:37.465Z"),
+
+    "Read_Token" : "9d78010c-fb68-4b66-af63-537153497de0",
+    "Read_Token_Validity" : ISODate("2021-01-02T13:13:37.465Z"),
+    "Insert_Token" : "9d78010c-fb68-4b66-af63-537153497de0",
+    "Insert_Token_Validity" : ISODate("2021-01-02T13:13:37.465Z"),
+    "Update_Token" : "9d78010c-fb68-4b66-af63-537153497de0",
+    "Update_Token_Validity" : ISODate("2021-01-02T13:13:37.465Z"),
+    "Delete_Token" : "9d78010c-fb68-4b66-af63-537153497de0",
+    "Delete_Token_Validity" : ISODate("2021-01-02T13:13:37.465Z"),
+}
+
+// Credentials.json
+{
+    "_id" : "9591bdd9-1ef3-4fb0-8fb0-ee57e050f51e",
+    "BusinessApplicationId" : "487319e3-fe24-4e08-bca7-7ec94811c464",
+    "UserName" : "ADDA.COM",
+    "Password" : "Hashed_password",
+    "Host" : "145.87.52.96",
+    "Port" : 6875,
+    "JsonWebToken" : "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.tyh-VfuzIxCyGYDlkBA7DfyjrqmSHu6pQ2hoZuFqUSLPNY2N0mpHb3nk5K17HWP_3cYHBw7AhHale5wky6-sVA",
+    "TokenValidity" : ISODate("2021-01-02T13:13:37.465Z")
+}
+
+// BusinessAppRequestRecords.json
+{
+    
+}
+
+// Indexing, Cashing macisiom
