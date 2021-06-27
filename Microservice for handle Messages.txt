@@ -3,9 +3,11 @@
     "_id": "21bde479-27dc-4e51-9862-fbf02606868f",
     "ConversationId": "763e6856-fd96-49a2-971b-40b30ad576a2",
     "MesaageText/body": "hello",
-    "MessageNumber": 5,
-    "MessageSenderId": "0fd4a403-ac88-4ad1-b7b8-3806aa759664",
-    "MessageSendTime": ISODate("2021-01-02T13:13:37.465Z"),
+    "Count": 5,
+    "SenderId": "0fd4a403-ac88-4ad1-b7b8-3806aa759664",
+    "SenderDeviceAddress / MAC": "78:84:S4:R7:7E",
+    "SenderPublicAddress / IP" : "168.978.485.10",
+    "SendTime": ISODate("2021-01-02T13:13:37.465Z"),
     "MessageDeliveryTime": ISODate("2021-01-02T13:13:37.465Z"),
     "Reactions" : [
         {
@@ -15,7 +17,7 @@
         }
     ],
     "Action" : {
-        "Type" : "UserAdd / UserRemove / Conversation Name change",
+        "Type" : "UserAdd / UserRemove / Conversation Name change / Emoji Change",
         "ActionBy" : "e18b1311-d3c9-4e66-b3c0-74f8a0f19db9",
         "ActionTime" : ISODate("2021-01-02T13:13:37.465Z")
     },
